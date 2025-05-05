@@ -13,4 +13,9 @@ Route::get('/index', function () {
 
 
 
+Route::get('/register', function () {
+    return view('register');
+});
+
+
 
