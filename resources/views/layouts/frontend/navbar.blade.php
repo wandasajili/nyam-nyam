@@ -1,4 +1,4 @@
-<div class="container-xxl position-relative p-0">
+<div class=" position-relative p-0">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
         <a href="{{ url('/') }}" class="navbar-brand p-0">
@@ -19,10 +19,10 @@
             </div>
         </div>
     </nav>
-
+    
     <!-- Dynamic Hero Section -->
     @hasSection('page-title')
-    <div class="container-xxl py-5 bg-dark hero-header mb-5">
+    <div class=" py-5 bg-dark hero-header mb-5">
         <div class="container text-center my-5 pt-5 pb-4">
             <h1 class="display-3 text-white mb-3 animated slideInDown">
                 @yield('page-title')

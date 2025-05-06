@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>NyamNyam | {{ $title ?? '' }}</title>
+    <link rel="icon" type="image/png" href="img/nyum.png">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -34,7 +35,7 @@
 
 <body>
     {{-- navbar --}}
-    <div class="container-xxl bg-white p-0">
+    <div class=" bg-white p-0">
         @include('layouts.frontend.navbar')
 
         @yield('content')

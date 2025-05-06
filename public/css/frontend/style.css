@@ -477,3 +477,8 @@
     flex-wrap: wrap; /* agar responsif */
     margin: 0 auto;
 }
+
+.full-width {
+    width: 100vw;
+    margin: 0;
+}

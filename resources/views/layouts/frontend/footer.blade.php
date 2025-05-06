@@ -5,7 +5,6 @@
                 <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
                 <a class="btn btn-link" href="">About Us</a>
                 <a class="btn btn-link" href="">Contact Us</a>
-                <a class="btn btn-link" href="">Reservation</a>
                 <a class="btn btn-link" href="">Privacy Policy</a>
                 <a class="btn btn-link" href="">Terms & Condition</a>
             </div>
@@ -15,14 +14,16 @@
                 <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>081327888592</p>
                 <p class="mb-2"><i class="fa fa-envelope me-3"></i>nyam_nyam@gmail.com</p>
                 <div class="d-flex pt-2">
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://wa.me/62881024548319" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/anaranyamnyam/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Open</h4>
                 <h5 class="text-light fw-normal">Monday - Saturday</h5>
                 <p>09AM - 09PM</p>
                 <h5 class="text-light fw-normal">Sunday</h5>
