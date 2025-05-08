@@ -20,15 +20,15 @@
                 <div class="row gy-4">
                     <div class="col-md-4">
                         <h5 class="section-title ff-secondary fw-normal text-start text-primary">Booking</h5>
-                        <p><i class="fa fa-envelope-open text-primary me-2"></i>Nyam_nyam@gmail.com</p>
+                        <p><i class="fa fa-envelope-open text-primary me-2"></i>nyamnyamchips@gmail.com</p>
                     </div>
                     <div class="col-md-4">
                         <h5 class="section-title ff-secondary fw-normal text-start text-primary">General</h5>
-                        <p><i class="fa fa-envelope-open text-primary me-2"></i>Nyam_nyam@gmail.com</p>
+                        <p><i class="fa fa-envelope-open text-primary me-2"></i>nyamnyamchips@gmail.com</p>
                     </div>
                     <div class="col-md-4">
                         <h5 class="section-title ff-secondary fw-normal text-start text-primary">Technical</h5>
-                        <p><i class="fa fa-envelope-open text-primary me-2"></i>Nyam_nyam@gmail.com</p>
+                        <p><i class="fa fa-envelope-open text-primary me-2"></i>nyamnyamchips@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -39,33 +39,51 @@
                     tabindex="0"></iframe>
             </div>
             <div class="col-md-6">
+                @session('success')
+                    <div class="alert alert-success" role="alert">
+                        {{ $value }}
+                    </div>
+                @endsession
                 <div class="wow fadeInUp" data-wow-delay="0.2s">
-                    <form>
+                    <form action="{{ route('contact.sendEnquiry') }}" method="POST">
+                        @csrf
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" name="name">
                                     <label for="name">Your Name</label>
                                 </div>
+                                @error('name')
+                                    <p class="text-danger">{{ $message }}</p>
+                                @enderror
                             </div>
+                            
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" name="email">
                                     <label for="email">Your Email</label>
                                 </div>
+                                @error('email')
+                                    <p class="text-danger">{{ $message }}</p>
+                                @enderror
                             </div>
-                            <div class="col-12">
+                       
+                            {{-- <div class="col-12">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="subject" placeholder="Subject">
                                     <label for="subject">Subject</label>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px" name="messageContent"></textarea>
                                     <label for="message">Message</label>
                                 </div>
+                                @error('messageContent')
+                                    <p class="text-danger">{{ $message }}</p>
+                                @enderror
                             </div>
+                        
                             <div class="col-12">
                                 <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
                             </div>

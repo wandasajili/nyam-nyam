@@ -19,8 +19,6 @@ class UserController extends Controller
             'nama' => 'required',
             'email' => 'required|email|unique:users',
             'password' => 'required|min:6',
-            'alamat' => 'nullable|string',
-            'nomor_hp' => 'nullable|string',
         ]);
 
         User::create([
