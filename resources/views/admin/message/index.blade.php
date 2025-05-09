@@ -5,6 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <title>Nyam Nyam Admin</title>
 
   <!-- CSS Plugins -->
@@ -164,7 +165,7 @@
                             <th>Email</th>
                             <th>Message</th>
                             <th>Created At</th>
-                            <th>Action</th>
+                          
                           </tr>
                         </thead>
                         <tbody>
@@ -176,14 +177,7 @@
                             <td data-label="Message" style="max-width: 250px; white-space:normal; word-wrap:break-word">{{ $message->messageContent }}</td>
                             <td data-label="Created_at" style="max-width: 250px; white-space:normal; word-wrap:break-word">{{ $message->created_at }}</td>
                           
-                            <td class="td-actions" data-label="Action">
-                              <form action="{{ route('message.destroy', $message->id) }}" method="POST" class="action-form">
-                                @csrf
-                                @method('DELETE')
-                                <a href="{{ route('message.edit', $message->id) }}" class="btn btn-sm btn-primary">Update</a>
-                                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
-                              </form>
-                            </td>
+                    
                           </tr>
                           @endforeach
                         </tbody>

@@ -5,6 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <title>Nyam Nyam Admin</title>
 
   <!-- CSS Plugins -->
@@ -79,7 +80,7 @@
                           <td>{{ $team->name }}</td>
                           <td>{{ $team->socialmedia }}</td>
                  
-                          <td>{{ $team->updated_at }}</td>
+                 
                         
                        
                           <td>

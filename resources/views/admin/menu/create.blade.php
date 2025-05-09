@@ -5,6 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <title>Nyam Nyam Admin</title>
 
   <!-- CSS Plugins -->
@@ -88,7 +89,7 @@
                             </div>
                         
                             <button type="submit" class="btn btn-primary">Submit</button>
-                            <a href="{{ url('menu') }}" class="btn btn-light">Cancel</a>
+                            <a href="{{ url('admin/menu') }}" class="btn btn-light">Cancel</a>
                         </form>
                         
       

@@ -13,6 +13,7 @@ use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\ChangePasswordController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ContactController;
+use App\Models\Message;
 
 Route::get('/', function () {
     $reviews = Review::all();
@@ -44,7 +45,8 @@ Route::middleware('auth')->group(function(){
         $reviewsCount = Review::count();
         $menusCount = Menu::count();
         $teamsCount = Team::count();
-        return view('admin.index', compact('reviewsCount', 'menusCount', 'teamsCount'));
+        $messageCount = Message::count();
+        return view('admin.index', compact('reviewsCount', 'menusCount', 'teamsCount', 'messageCount'));
     });
     
     Route::resource('admin/menu', \App\Http\Controllers\MenuController::class);

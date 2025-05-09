@@ -5,6 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <title>Nyam Nyam Admin</title>
 
   <!-- CSS Plugins -->
@@ -45,6 +46,13 @@
           <li class="nav-item">
             <a class="nav-link" href="admin/menu">
               <span class="menu-title"  style="color: #3E4B5B !important; font-weight: 100 !important;">Menu</span>
+              <i class="mdi mdi-table-large menu-icon" style="color: #3E4B5B !important; font-weight: 100 !important;"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('/admin/message') }}">
+              <span class="menu-title" style="color: #3E4B5B !important; font-weight: 100 !important;">Message</span>
               <i class="mdi mdi-table-large menu-icon" style="color: #3E4B5B !important; font-weight: 100 !important;"></i>
             </a>
           </li>
@@ -110,6 +118,20 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-4 stretch-card grid-margin" onclick="window.location.href='/admin/message'" style="cursor: pointer;">
+              <div class="card bg-gradient-success card-img-holder text-white">
+                  <div class="card-body">
+                      <img src="{{ asset('backend/assets/images/dashboard/circle.svg') }}" class="card-img-absolute" alt="circle-image" />
+                      
+                      <h2 class="mb-5">Message</h2>
+                      <h2 class="font-weight-normal mb-3">
+                          {{ $messageCount}}
+                          <i class="mdi mdi-chart-line mdi-24px float-end"></i>
+                      </h2>
+                  </div>
+              </div>
+          </div>
         
             <!-- Weekly Orders Card -->
             <div class="col-md-4 stretch-card grid-margin" onclick="window.location.href='admin/review'" style="cursor: pointer;">
