@@ -9,6 +9,8 @@
 @endsection
 
 @section('content')
+
+<!-- About End -->
 <div class="container-xxl py-5">
     <div class="container">
         <div class="row g-5 align-items-center">
@@ -53,13 +55,11 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+               
             </div>
         </div>
     </div>
 </div>
-<!-- About End -->
-
 
 <!-- Team Start -->
 <div class="container-xxl pt-5 pb-3">
@@ -68,64 +68,26 @@
             <h5 class="section-title ff-secondary text-center text-primary fw-normal">Team Members</h5>
             <h1 class="mb-5"></h1>
         </div>
-        <div class="row g-4">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="team-item text-center rounded overflow-hidden">
-                    <div class="rounded-circle overflow-hidden m-4">
-                        <img class="img-fluid" src="img/ion.jpg" alt="">
-                    </div>
-                    <h5 class="mb-0">Rivaldo Carlos</h5>
-                    <small></small>
-                    <div class="d-flex justify-content-center mt-3">
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item text-center rounded overflow-hidden">
-                    <div class="rounded-circle overflow-hidden m-4">
-                        <img class="img-fluid" src="img/wanda.jpg" alt="">
-                    </div>
-                    <h5 class="mb-0">Wanda Sajili</h5>
-                    <small></small>
-                    <div class="d-flex justify-content-center mt-3">
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+       
+            <div class="row g-4">
+                @foreach ($teams as $team)
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="rounded-circle overflow-hidden m-4 mx-auto" style="width: 200px; height: 200px;">
+                            <img src="img/{{ $team->image }}" alt="{{ $team->name }}"
+                                 class="w-100 h-100"
+                                 style="object-fit: cover;">
+                        </div>
+                        <h5 class="mb-0">{{ $team->name }}</h5>
+                        <small></small>
+                        <div class="d-flex justify-content-center mt-3">
+                 
+                            <a class="btn btn-square btn-primary mx-1" target="blank" href="https://www.instagram.com/{{ $team->socialmedia }}"><i class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
+                @endforeach
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item text-center rounded overflow-hidden">
-                    <div class="rounded-circle overflow-hidden m-4">
-                        <img class="img-fluid" src="img/anara.jpg" alt="">
-                    </div>
-                    <h5 class="mb-0">Arlen Nawang Rachelia</h5>
-                    <small></small>
-                    <div class="d-flex justify-content-center mt-3">
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="team-item text-center rounded overflow-hidden">
-                    <div class="rounded-circle overflow-hidden m-4">
-                        <img class="img-fluid" src="img/beni.jpg" alt="">
-                    </div>
-                    <h5 class="mb-0">Arbian Indra Musafak</h5>
-                    <small></small>
-                    <div class="d-flex justify-content-center mt-3">
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
