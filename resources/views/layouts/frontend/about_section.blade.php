@@ -7,7 +7,8 @@
                         <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/p1.png">
                     </div>
                     <div class="col-6 text-start">
-                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/p2.png" style="margin-top: 25%;">
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/p2.png"
+                            style="margin-top: 25%;">
                     </div>
                     <div class="col-6 text-end">
                         <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/p3.png">
@@ -20,7 +21,11 @@
             <div class="col-lg-6">
                 <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
                 <h1 class="mb-4"> <i class="fa fa-utensils text-primary me-2"></i>Nyam-Nyam</h1>
-                <p class="mb-4">Nyamnyam is an e-commerce platform that offers a variety of delicious local snacks. The name Nyamnyam was chosen because it was inspired by childhood, when children often pretended to eat while saying "nyamnyam" while playing cooking. This word is also often said by mothers to children when feeding them food. Through Nyamnyam, we want to bring back those sweet memories in the form of real and delicious snacks—ready to eat anytime!</p>
+                <p class="mb-4">Nyamnyam is an e-commerce platform that offers a variety of delicious local snacks.
+                    The name Nyamnyam was chosen because it was inspired by childhood, when children often pretended to
+                    eat while saying "nyamnyam" while playing cooking. This word is also often said by mothers to
+                    children when feeding them food. Through Nyamnyam, we want to bring back those sweet memories in the
+                    form of real and delicious snacks—ready to eat anytime!</p>
                 <!-- <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p> -->
                 <div class="row g-4 mb-4">
                     <div class="col-sm-6">
