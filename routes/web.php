@@ -40,7 +40,7 @@ Route::get('/auth/login', [AuthController::class, 'login'])->name('login');
 Route::post('/auth/login/submit', [AuthController::class, 'submitLogin'])->name('login.submit');
 Route::post('/auth/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::middleware('auth')->group(function(){
+Route::middleware('auth')->group(function () {
     Route::get('/admin', function () {
         $reviewsCount = Review::count();
         $menusCount = Menu::count();
@@ -48,7 +48,7 @@ Route::middleware('auth')->group(function(){
         $messageCount = Message::count();
         return view('admin.index', compact('reviewsCount', 'menusCount', 'teamsCount', 'messageCount'));
     });
-    
+
     Route::resource('admin/menu', \App\Http\Controllers\MenuController::class);
     Route::resource('admin/review', \App\Http\Controllers\ReviewController::class);
     Route::resource('admin/team', \App\Http\Controllers\TeamController::class);
@@ -58,7 +58,3 @@ Route::middleware('auth')->group(function(){
 // Send Email
 // Route::get('home/contact', [ContactController::class, 'send'])->name('contact.send');
 Route::post('home/contact', [ContactController::class, 'sendEnquiry'])->name('contact.sendEnquiry');
-
-
-?>
-
