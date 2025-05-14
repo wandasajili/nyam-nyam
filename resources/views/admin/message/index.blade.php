@@ -165,6 +165,7 @@
                             <th>Email</th>
                             <th>Message</th>
                             <th>Created At</th>
+                            <th>Action</th>
                           
                           </tr>
                         </thead>
@@ -176,7 +177,13 @@
                             <td data-label="Email" style="max-width: 250px; white-space:normal; word-wrap:break-word">{{ $message->email }}</td>
                             <td data-label="Message" style="max-width: 250px; white-space:normal; word-wrap:break-word">{{ $message->messageContent }}</td>
                             <td data-label="Created_at" style="max-width: 250px; white-space:normal; word-wrap:break-word">{{ $message->created_at }}</td>
-                          
+                            <td class="td-actions" data-label="Action">
+                              <form action="{{ route('message.destroy', $message->id) }}" method="POST" class="action-form">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                              </form>
+                            </td>
                     
                           </tr>
                           @endforeach
