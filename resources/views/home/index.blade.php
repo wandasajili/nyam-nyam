@@ -181,80 +181,10 @@
             </div>
         </div>
 
-<<<<<<< HEAD
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="text-center">
-                <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
-                <h1 class="mb-5">Our Clients Say!!!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel">
-                <div class="testimonial-item bg-transparent border rounded p-4">
-                    <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                    <p>Ulva chips are really delicious, I don't regret buying 2, I'm addicted, next time I want to buy
-                        another variant💗🥰
-                    </p>
-                    <div class="d-flex align-items-center">
-                        <!-- <img class="img-fluid flex-shrink-0 rounded-circle" src="img/.jpg" style="width: 50px; height: 50px;"> -->
-                        <div class="ps-3">
-                            <h5 class="mb-1">Risnawati</h5>
-                            <small></small>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item bg-transparent border rounded p-4">
-                    <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                    <p>Acaaa really likes the original Ulva, the seaweed is really tasty, it's the best, really🤤
-                    </p>
-                    <div class="d-flex align-items-center">
-                        <!-- <img class="img-fluid flex-shrink-0 rounded-circle" src="img/" style="width: 50px; height: 50px;"> -->
-                        <div class="ps-3">
-                            <h5 class="mb-1">Caca</h5>
-                            <small></small>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item bg-transparent border rounded p-4">
-                    <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                    <p>Is this seriously that price? I think it's cheap because it tastes really good, I swear it's not
-                        a lie😭
-                    </p>
-                    <div class="d-flex align-items-center">
-
-                        <div class="ps-3">
-                            <h5 class="mb-1">Kang Ade</h5>
-                            <small></small>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item bg-transparent border rounded p-4">
-                    <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                    <p>It's really suitable as my diet snack, because I'm reducing my consumption of oily snacks, thank
-                        you.🤗
-                    </p>
-                    <div class="d-flex align-items-center">
-
-                        <div class="ps-3">
-                            <h5 class="mb-1">Nira</h5>
-                            <small></small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {{-- footer --}}
-    @include('layouts.frontend.footer')
-
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-=======
         {{-- footer --}}
         @include('layouts.frontend.footer')
 
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
->>>>>>> 2c3d0082a4143a59c5da8a85b56d9962d4f59c27
     </div>
 
     <!-- jQuery & Bootstrap -->
