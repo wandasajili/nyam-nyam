@@ -195,6 +195,7 @@
             </div>
         </div>
 
+<<<<<<< HEAD
         <<<<<<< HEAD <!-- Testimonial Start -->
             <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="container">
@@ -274,6 +275,12 @@
             <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i
                     class="bi bi-arrow-up"></i></a>
             >>>>>>> 2c3d0082a4143a59c5da8a85b56d9962d4f59c27
+=======
+        {{-- footer --}}
+        @include('layouts.frontend.footer')
+
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+>>>>>>> 5e089dc37d1a27fb24eb61ee6ca1852851945ae7
     </div>
 
     <!-- jQuery & Bootstrap -->

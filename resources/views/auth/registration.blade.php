@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Register</title>
@@ -17,6 +18,23 @@
             border-radius: 1rem;
         }
     </style>
+=======
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>Register</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="{{ asset('backend/assets/images/favicon.png') }}">
+  <style>
+    body {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      height: 100vh;
+    }
+    .card {
+      border-radius: 1rem;
+    }
+  </style>
+>>>>>>> 5e089dc37d1a27fb24eb61ee6ca1852851945ae7
 </head>
 
 <body class="d-flex align-items-center justify-content-center">

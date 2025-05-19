@@ -196,6 +196,45 @@
                             </div>
                         </div>
                     </div>
+<<<<<<< HEAD
+=======
+                    
+                    <!-- Responsive Table -->
+                    <div class="table-responsive-custom hide-scrollbar">
+                      <table class="table table-responsive-stack">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Message</th>
+                            <th>Created At</th>
+                            <th>Action</th>
+                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
+                          @foreach ($messages as $message)
+                          <tr>
+                            <td data-label="Name">{{ $message->name }}</td>
+                            <td data-label="Email" style="max-width: 250px; white-space:normal; word-wrap:break-word">{{ $message->email }}</td>
+                            <td data-label="Message" style="max-width: 250px; white-space:normal; word-wrap:break-word">{{ $message->messageContent }}</td>
+                            <td data-label="Created_at" style="max-width: 250px; white-space:normal; word-wrap:break-word">{{ $message->created_at }}</td>
+                            <td class="td-actions" data-label="Action">
+                              <form action="{{ route('message.destroy', $message->id) }}" method="POST" class="action-form">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                              </form>
+                            </td>
+                    
+                          </tr>
+                          @endforeach
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+>>>>>>> 5e089dc37d1a27fb24eb61ee6ca1852851945ae7
                 </div>
                 <!-- Content Wrapper Ends -->
 
